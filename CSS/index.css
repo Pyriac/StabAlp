@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura&family=Kadwa&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --grey: #eeeeeb;
+  --black: #2a2d34;
+  --blue-light: #96c9dc;
+  --green: #c5e0d8;
+  --blue: #239fc0;
+  --title-font: "Kadwa", serif;
+  --main-font: "Jura", sans-serif;
+}
+
+/* region -------- NavBar */
+header {
+  background-color: var(--grey);
+  color: var(--black);
+  /* display: flex; */
+  justify-content: space-between;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+h1 {
+  color: var(--blue);
+  font-family: var(--title-font);
+  font-weight: 500;
+  margin: 0.5rem 1rem;
+}
+
+header > h3 {
+  display: none;
+}
+
+.logo {
+  margin: 1vw 2vw;
+  width: 100px;
+  display: none;
+}
+
+.menuNav {
+  display: none;
+}
+
+menu.nav.open {
+  display: block;
+}
+
+.menuNav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.menuNav a {
+  background-color: #ddd;
+  color: black;
+}
+
+.list {
+  fill: var(--blue);
+  width: 2rem;
+  margin: 0.5rem;
+  display: block;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+/* End region NavBar */
