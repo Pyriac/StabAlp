@@ -20,6 +20,10 @@ a {
   --main-font: "Jura", sans-serif;
 }
 
+body {
+  background-color: var(--grey);
+}
+
 /* #region -------- NavBar */
 header {
   background-color: var(--grey);
@@ -27,8 +31,10 @@ header {
   justify-content: space-between;
   width: 100vw;
   overflow: hidden;
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  z-index: 20;
+  top: 0%;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
 }
 
 h1 {
@@ -95,11 +101,12 @@ header > h3 {
 /* #endregion */
 /* #region -------- Main */
 main {
-  position: relative;
+  position: absolute;
   z-index: 1;
+  top: 80px;
 }
 
-.main-container {
+.mainContainer {
   height: calc(100svh - 80px);
   width: 100vw;
   overflow: hidden;
@@ -118,6 +125,8 @@ h2 {
   position: absolute;
   bottom: 47px;
   z-index: 20;
+  font-family: var(--main-font);
+  color: var(--black);
   background-color: var(--grey);
   padding: 2rem 1rem;
   left: 5%;
