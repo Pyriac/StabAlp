@@ -11,3 +11,5 @@ function toggleNav() {
 }
 
 popButton.addEventListener("click", toggleNav);
+
+// MOUVEMENT IMAGE
